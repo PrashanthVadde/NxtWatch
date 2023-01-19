@@ -42,6 +42,7 @@ export const LabelStyles = styled.label`
 `
 
 export const InputStyles = styled.input`
+  color: ${props => (props.isDarkModeActive ? '#f4f4f4' : '#010101')};
   height: 42px;
   padding: 6px;
   border: 1px solid #cccccc;
@@ -65,7 +66,7 @@ export const ShowPasswordContainer = styled.div`
 `
 
 export const LoginButton = styled.button`
-  color: '#ffffff';
+  color: #ffffff;
   font-size: 20px;
   font-weight: 500;
   height: 40px;

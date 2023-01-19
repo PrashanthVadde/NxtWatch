@@ -33,8 +33,8 @@ const TrendingVideoItem = props => {
         const {isDarkModeOn} = value
 
         return (
-          <TrendingVideo>
-            <Link to={`/videos/${id}`} style={{textDecoration: 'none'}}>
+          <Link to={`/videos/${id}`} style={{textDecoration: 'none'}}>
+            <TrendingVideo>
               <TrendingVideoThumbnail
                 src={thumbnailUrl}
                 alt="video thumbnail"
@@ -48,8 +48,8 @@ const TrendingVideoItem = props => {
                   {viewCount} views . {time}
                 </ViewsAndTime>
               </TrendingVideoContentContainer>
-            </Link>
-          </TrendingVideo>
+            </TrendingVideo>
+          </Link>
         )
       }}
     </ThemeContext.Consumer>

@@ -19,8 +19,8 @@ const GamingVideoItem = props => {
         const {isDarkModeOn} = value
 
         return (
-          <GamingVideo>
-            <Link to={`/videos/${id}`} style={{textDecoration: 'none'}}>
+          <Link to={`/videos/${id}`} style={{textDecoration: 'none'}}>
+            <GamingVideo>
               <ThumbnailImage src={thumbnailUrl} alt="video thumbnail" />
               <GamingVideoTitle isDarkModeActive={isDarkModeOn}>
                 {title}
@@ -28,8 +28,8 @@ const GamingVideoItem = props => {
               <GamingVideViewCount isDarkModeActive={isDarkModeOn}>
                 {viewCount} Watching Worldwide
               </GamingVideViewCount>
-            </Link>
-          </GamingVideo>
+            </GamingVideo>
+          </Link>
         )
       }}
     </ThemeContext.Consumer>

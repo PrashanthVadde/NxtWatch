@@ -36,8 +36,8 @@ const HomeVideoItem = props => {
         const {isDarkModeOn} = value
 
         return (
-          <VideoItem>
-            <Link to={`/videos/${id}`} style={{textDecoration: 'none'}}>
+          <Link to={`/videos/${id}`} style={{textDecoration: 'none'}}>
+            <VideoItem>
               <ThumbnailImage src={thumbnailUrl} alt="video thumbnail" />
               <VideoContentContainer>
                 <ProfileImage src={profileImageUrl} alt="channel logo" />
@@ -55,8 +55,8 @@ const HomeVideoItem = props => {
                   </ViewsCountContainer>
                 </ContentRightPart>
               </VideoContentContainer>
-            </Link>
-          </VideoItem>
+            </VideoItem>
+          </Link>
         )
       }}
     </ThemeContext.Consumer>
