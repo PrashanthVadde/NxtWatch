@@ -18,7 +18,9 @@ export const NxtLogo = styled.img`
   width: 150px;
 `
 
-export const HeaderRightPartItems = styled.div`
+export const HeaderRightPartItems = styled.ul`
+  list-style-type: none;
+  padding-left: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;

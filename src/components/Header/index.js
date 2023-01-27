@@ -57,21 +57,25 @@ class Header extends Component {
 
               <HeaderRightPartItems>
                 {isDarkModeOn ? (
-                  <ThemeBtn
-                    type="button"
-                    onClick={onClickDarkModeIcon}
-                    data-testid="theme"
-                  >
-                    <HiOutlineSun size={30} style={{color: 'white'}} />
-                  </ThemeBtn>
+                  <li>
+                    <ThemeBtn
+                      type="button"
+                      onClick={onClickDarkModeIcon}
+                      data-testid="theme"
+                    >
+                      <HiOutlineSun size={30} style={{color: 'white'}} />
+                    </ThemeBtn>
+                  </li>
                 ) : (
-                  <ThemeBtn
-                    type="button"
-                    onClick={onClickDarkModeIcon}
-                    data-testid="theme"
-                  >
-                    <HiMoon size={30} />
-                  </ThemeBtn>
+                  <li>
+                    <ThemeBtn
+                      type="button"
+                      onClick={onClickDarkModeIcon}
+                      data-testid="theme"
+                    >
+                      <HiMoon size={30} />
+                    </ThemeBtn>
+                  </li>
                 )}
 
                 <ProfileImage
@@ -79,7 +83,7 @@ class Header extends Component {
                   alt="profile"
                 />
 
-                <div className="popup-container">
+                <li className="popup-container">
                   <Popup
                     modal
                     trigger={
@@ -111,7 +115,7 @@ class Header extends Component {
                       </PopupContainer>
                     )}
                   </Popup>
-                </div>
+                </li>
               </HeaderRightPartItems>
             </HeaderContainer>
           )

@@ -35,6 +35,8 @@ export const HomeTabContainer = styled.div`
   flex-direction: row;
   align-items: center;
   padding-left: 20px;
+  padding: 10px;
+  margin: 0;
 `
 
 export const TrendingTabContainer = styled(HomeTabContainer)`
@@ -82,7 +84,7 @@ export const SavedVideosTabContainer = styled(HomeTabContainer)`
   }};
 `
 
-export const HomeTabText = styled.h1`
+export const HomeSpanEl = styled.span`
   color: ${props => {
     if (props.btnStatus === 'home' && props.isDarkModeActive === true) {
       return '#f9f9f9'
@@ -97,10 +99,11 @@ export const HomeTabText = styled.h1`
   }};
   font-size: 20px;
   font-weight: 500;
-  margin-left: 20px;
+  margin-left: 30px;
+  margin-top: 0;
 `
 
-export const TrendingTabText = styled.h1`
+export const TrendingSpanEl = styled.span`
   color: ${props => {
     if (props.btnStatus === 'trending' && props.isDarkModeActive === true) {
       return '#f9f9f9'
@@ -117,7 +120,7 @@ export const TrendingTabText = styled.h1`
   font-weight: 500;
   margin-left: 20px;
 `
-export const GamingTabText = styled.h1`
+export const GamingSpanEl = styled.span`
   color: ${props => {
     if (props.btnStatus === 'gaming' && props.isDarkModeActive === true) {
       return '#f9f9f9'
@@ -135,7 +138,7 @@ export const GamingTabText = styled.h1`
   margin-left: 20px;
 `
 
-export const SavedTabText = styled.h1`
+export const SavedVideosSpanEl = styled.span`
   color: ${props => {
     if (props.btnStatus === 'savedVideos' && props.isDarkModeActive === true) {
       return '#f9f9f9'
@@ -155,6 +158,8 @@ export const SavedTabText = styled.h1`
 
 export const HomeBtn = styled.div`
   color: ${props => (props.btnStatus === 'home' ? '#ff0000' : '#7e858e')};
+  margin: 0;
+  padding: 0;
 `
 
 export const FireBtn = styled.div`

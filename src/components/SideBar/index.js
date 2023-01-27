@@ -12,10 +12,10 @@ import {
   TrendingTabContainer,
   GamingTabContainer,
   SavedVideosTabContainer,
-  HomeTabText,
-  TrendingTabText,
-  GamingTabText,
-  SavedTabText,
+  HomeSpanEl,
+  TrendingSpanEl,
+  GamingSpanEl,
+  SavedVideosSpanEl,
   HomeBtn,
   FireBtn,
   GameBtn,
@@ -46,14 +46,13 @@ class SideBar extends Component {
                   >
                     <HomeBtn btnStatus={tabName}>
                       <AiFillHome size={25} />
+                      <HomeSpanEl
+                        btnStatus={tabName}
+                        isDarkModeActive={isDarkModeOn}
+                      >
+                        Home
+                      </HomeSpanEl>
                     </HomeBtn>
-
-                    <HomeTabText
-                      btnStatus={tabName}
-                      isDarkModeActive={isDarkModeOn}
-                    >
-                      Home
-                    </HomeTabText>
                   </HomeTabContainer>
                 </Link>
 
@@ -63,15 +62,14 @@ class SideBar extends Component {
                     isDarkModeActive={isDarkModeOn}
                   >
                     <FireBtn btnStatus={tabName}>
-                      <HiFire size={25} />
+                      <HiFire size={25} />{' '}
+                      <TrendingSpanEl
+                        btnStatus={tabName}
+                        isDarkModeActive={isDarkModeOn}
+                      >
+                        Trending
+                      </TrendingSpanEl>
                     </FireBtn>
-
-                    <TrendingTabText
-                      btnStatus={tabName}
-                      isDarkModeActive={isDarkModeOn}
-                    >
-                      Trending
-                    </TrendingTabText>
                   </TrendingTabContainer>
                 </Link>
 
@@ -81,15 +79,14 @@ class SideBar extends Component {
                     isDarkModeActive={isDarkModeOn}
                   >
                     <GameBtn btnStatus={tabName}>
-                      <SiYoutubegaming size={25} />
+                      <SiYoutubegaming size={25} />{' '}
+                      <GamingSpanEl
+                        btnStatus={tabName}
+                        isDarkModeActive={isDarkModeOn}
+                      >
+                        Gaming
+                      </GamingSpanEl>
                     </GameBtn>
-
-                    <GamingTabText
-                      btnStatus={tabName}
-                      isDarkModeActive={isDarkModeOn}
-                    >
-                      Gaming
-                    </GamingTabText>
                   </GamingTabContainer>
                 </Link>
 
@@ -99,15 +96,14 @@ class SideBar extends Component {
                     isDarkModeActive={isDarkModeOn}
                   >
                     <SavedVideoBtn btnStatus={tabName}>
-                      <BiListPlus size={25} />
+                      <BiListPlus size={25} />{' '}
+                      <SavedVideosSpanEl
+                        btnStatus={tabName}
+                        isDarkModeActive={isDarkModeOn}
+                      >
+                        Saved videos
+                      </SavedVideosSpanEl>
                     </SavedVideoBtn>
-
-                    <SavedTabText
-                      btnStatus={tabName}
-                      isDarkModeActive={isDarkModeOn}
-                    >
-                      Saved videos
-                    </SavedTabText>
                   </SavedVideosTabContainer>
                 </Link>
               </TabsPart>
