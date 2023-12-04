@@ -40,17 +40,19 @@ export const ChannelName = styled.p`
   color: ${props => (props.isDarkModeActive ? '#cccccc' : '#383838')};
   font-size: 16px;
   font-weight: 400;
-  margin-bottom: 0;
+  margin-top: 2px;
+  margin-bottom: 5px;
 `
 
 export const ViewsCountContainer = styled.div`
   display: flex;
   align-items: center;
-  margin-top: 0;
+  margin: 0px;
 `
 
 export const ViewsCount = styled.p`
   color: ${props => (props.isDarkModeActive ? '#cccccc' : '#383838')};
   font-size: 14px;
   font-weight: 400;
+  margin-top: 0;
 `

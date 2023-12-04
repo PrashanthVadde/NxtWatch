@@ -6,6 +6,7 @@ export const SavedVideosPageContainer = styled.div`
   font-family: 'Roboto';
   background-color: ${props =>
     props.isDarkModeActive ? '#0f0f0f' : '#f9f9f9'};
+  max-height: 100vh;
 `
 
 export const SavedVideosContent = styled.div`
@@ -22,10 +23,10 @@ export const SavedVideosRightPart = styled.div`
 `
 
 export const SavedVideoBanner = styled.div`
-  min-height: 16vh;
+  min-height: 13vh;
   width: 100%;
   background-color: ${props =>
-    props.isDarkModeActive ? '#231f20' : '#ebebeb'};
+    props.isDarkModeActive ? '#313131' : '#ebebeb'};
   padding-left: 30px;
 
   display: flex;
@@ -82,4 +83,5 @@ export const SavedVideosContainer = styled.ul`
   padding: 20px;
   list-style-type: none;
   margin: 0;
+  overflow-y: scroll;
 `

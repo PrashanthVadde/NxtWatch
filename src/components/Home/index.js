@@ -262,7 +262,10 @@ class Home extends Component {
                         isDarkModeActive={isDarkModeOn}
                         data-testid="searchButton"
                       >
-                        <BiSearch size={25} />
+                        <BiSearch
+                          size={25}
+                          style={{color: isDarkModeOn ? '#cccccc' : 'black'}}
+                        />
                       </SearchIconContainer>
                     </SearchBoxContainer>
                     {this.renderHomePageViews(isDarkModeOn)}

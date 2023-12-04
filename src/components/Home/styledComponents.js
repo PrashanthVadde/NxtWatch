@@ -6,6 +6,7 @@ export const HomePageContainer = styled.div`
   font-family: 'Roboto';
   background-color: ${props =>
     props.isDarkModeActive ? '#181818' : '#f9f9f9'};
+  max-height: 100vh;
 `
 
 export const HomePageContent = styled.div`
@@ -19,6 +20,7 @@ export const HomePageRightPart = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
+  max-height: 91vh;
 `
 
 export const HomeBannerImage = styled.div`
@@ -29,7 +31,7 @@ export const HomeBannerImage = styled.div`
 
   display: flex;
   flex-direction: column;
-  padding-left: 30px;
+  padding: 20px;
   padding-top: 10px;
 `
 
@@ -42,10 +44,11 @@ export const HomeBannerDescription = styled.p`
   color: #606060;
   font-size: 26px;
   font-weight: 500;
+  margin-bottom: 4px;
 `
 
 export const HomeBannerBtn = styled.button`
-  height: 46px;
+  height: 56px;
   width: 140px;
   border: 2px solid #606060;
   color: #606060;
@@ -71,19 +74,21 @@ export const CloseBtn = styled.button`
 `
 
 export const HomePageVideos = styled.div`
-  padding: 20px;
   background-color: ${props =>
     props.isDarkModeActive ? '#181818' : '#f9f9f9'};
   width: 100%;
 
   display: flex;
   flex-direction: column;
+  overflow-y: auto;
 `
 
 export const SearchBoxContainer = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin-top: 10px;
+  margin-left: 10px;
 `
 
 export const InputEl = styled.input`
@@ -127,7 +132,8 @@ export const HomeVideosContainer = styled.ul`
 
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
+  overflow-y: auto;
 `
 
 export const FailureViewContainer = styled.div`

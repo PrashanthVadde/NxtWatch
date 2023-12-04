@@ -117,11 +117,17 @@ class VideoItemDetail extends Component {
   }
 
   onClickLikeButton = () => {
-    this.setState({activeLikeButton: true, activeDislikeButton: false})
+    this.setState(prevState => ({
+      activeLikeButton: !prevState.activeLikeButton,
+      activeDislikeButton: false,
+    }))
   }
 
   onClickDislikeButton = () => {
-    this.setState({activeDislikeButton: true, activeLikeButton: false})
+    this.setState(prevState => ({
+      activeDislikeButton: !prevState.activeDislikeButton,
+      activeLikeButton: false,
+    }))
   }
 
   renderSuccessView = () => {

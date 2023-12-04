@@ -50,7 +50,7 @@ const HomeVideoItem = props => {
                   </ChannelName>
                   <ViewsCountContainer>
                     <ViewsCount isDarkModeActive={isDarkModeOn}>
-                      {viewCount} views . <p>{time}</p>
+                      {viewCount} views . <span>{time}</span> ago
                     </ViewsCount>
                   </ViewsCountContainer>
                 </ContentRightPart>

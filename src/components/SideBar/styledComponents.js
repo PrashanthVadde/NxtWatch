@@ -8,28 +8,28 @@ export const SideBarContainer = styled.div`
   height: 90vh;
   font-family: 'Roboto';
   background-color: ${props =>
-    props.isDarkModeActive ? '#0f0f0f' : '#ffffff'};
+    props.isDarkModeActive ? '#212121' : '#f8fafc'};
 `
 
 export const TabsPart = styled.div`
   display: flex;
   flex-direction: column;
   background-color: ${props =>
-    props.isDarkModeActive ? '#000000' : '#ffffff'};
+    props.isDarkModeActive ? '#000000' : '#f8fafc'};
 `
 
 export const HomeTabContainer = styled.div`
   background-color: ${props => {
     if (props.btnStatus === 'home' && props.isDarkModeActive === true) {
-      return '#313131'
+      return '#424242'
     }
     if (props.btnStatus === 'home' && props.isDarkModeActive === false) {
       return '#d7dfe9'
     }
     if (props.btnStatus !== 'home' && props.isDarkModeActive === true) {
-      return '#0f0f0f'
+      return '#212121'
     }
-    return 'white'
+    return '#f8fafc'
   }};
   display: flex;
   flex-direction: row;
@@ -42,45 +42,45 @@ export const HomeTabContainer = styled.div`
 export const TrendingTabContainer = styled(HomeTabContainer)`
   background-color: ${props => {
     if (props.btnStatus === 'trending' && props.isDarkModeActive === true) {
-      return '#313131'
+      return '#424242'
     }
     if (props.btnStatus === 'trending' && props.isDarkModeActive === false) {
       return '#d7dfe9'
     }
     if (props.btnStatus !== 'trending' && props.isDarkModeActive === true) {
-      return '#0f0f0f'
+      return '#212121'
     }
-    return 'white'
+    return '#f8fafc'
   }};
 `
 
 export const GamingTabContainer = styled(HomeTabContainer)`
   background-color: ${props => {
     if (props.btnStatus === 'gaming' && props.isDarkModeActive === true) {
-      return '#313131'
+      return '#424242'
     }
     if (props.btnStatus === 'gaming' && props.isDarkModeActive === false) {
       return '#d7dfe9'
     }
     if (props.btnStatus !== 'gaming' && props.isDarkModeActive === true) {
-      return '#0f0f0f'
+      return '#212121'
     }
-    return 'white'
+    return '#f8fafc'
   }};
 `
 
 export const SavedVideosTabContainer = styled(HomeTabContainer)`
   background-color: ${props => {
     if (props.btnStatus === 'savedVideos' && props.isDarkModeActive === true) {
-      return '#313131'
+      return '#424242'
     }
     if (props.btnStatus === 'savedVideos' && props.isDarkModeActive === false) {
       return '#d7dfe9'
     }
     if (props.btnStatus !== 'savedVideos' && props.isDarkModeActive === true) {
-      return '#0f0f0f'
+      return '#212121'
     }
-    return 'white'
+    return '#f8fafc'
   }};
 `
 

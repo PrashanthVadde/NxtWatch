@@ -25,6 +25,8 @@ export const VideoDetailItem = styled.div`
   align-items: center
   flex-direction: column;
   min-width: 80%;
+  max-height: 91vh;
+  overflow-y: scroll;
 `
 
 export const LoaderContainer = styled.div`
@@ -82,6 +84,7 @@ export const RetryBrn = styled.button`
 export const VideoDetailsContainer = styled.div`
   display: flex;
   flex-direction: column;
+  min-height: 800px;
 `
 
 export const Title = styled.p`

@@ -10,7 +10,7 @@ export const HeaderContainer = styled.div`
   padding-bottom: 20px;
   height: 9vh;
   background-color: ${props =>
-    props.isDarkModeActive ? '#000000' : '#ffffff'};
+    props.isDarkModeActive ? '#000000' : '#f1f1f1'};
 `
 
 export const NxtLogo = styled.img`
@@ -62,7 +62,8 @@ export const PopupContainer = styled.div`
   padding: 30px;
   background-color: ${props =>
     props.isDarkModeActive ? '#010101' : '#f9f9f9'};
-  box-shadow: 0px 14px 16px 0px #bfbfbf;
+  box-shadow: ${props =>
+    props.isDarkModeActive ? '' : '0px 14px 16px 0px #bfbfbf'};
 `
 
 export const ButtonsContainer = styled.div`

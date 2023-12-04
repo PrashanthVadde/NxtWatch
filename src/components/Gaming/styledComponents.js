@@ -6,6 +6,7 @@ export const GamingPageContainer = styled.div`
   font-family: 'Roboto';
   background-color: ${props =>
     props.isDarkModeActive ? '#0f0f0f ' : '#f9f9f9'};
+  max-height: 100vh;
 `
 
 export const GamePageContent = styled.div`
@@ -22,10 +23,10 @@ export const GamingPageRightPart = styled.div`
 `
 
 export const GamingPageBanner = styled.div`
-  min-height: 16vh;
+  min-height: 13vh;
   width: 100%;
   background-color: ${props =>
-    props.isDarkModeActive ? '#231f20' : '#ebebeb'};
+    props.isDarkModeActive ? '#313131' : '#ebebeb'};
   padding-left: 30px;
 
   display: flex;
@@ -57,6 +58,7 @@ export const GamingVideoContainer = styled.div`
   background-color: ${props =>
     props.isDarkModeActive ? '#0f0f0f ' : '#f9f9f9'};
   padding: 26px;
+  overflow-y: scroll;
 `
 
 export const LoaderContainer = styled.div`
